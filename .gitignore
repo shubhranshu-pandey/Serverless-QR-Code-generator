@@ -1,0 +1,52 @@
+# Lambda dependencies (too large for git)
+lambda_function.zip
+lambda_function/PIL/
+lambda_function/Pillow-10.0.0.dist-info/
+lambda_function/pypng-0.20220715.0.dist-info/
+lambda_function/qrcode-7.4.2.dist-info/
+lambda_function/typing_extensions-4.7.1.dist-info/
+lambda_function/bin/
+lambda_function/share/
+lambda_function/png.py
+lambda_function/typing_extensions.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log 

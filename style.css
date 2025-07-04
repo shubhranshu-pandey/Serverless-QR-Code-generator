@@ -1,0 +1,132 @@
+/* General Styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  color: #23262f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0006;
+  color: #23262f;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #23262f;
+}
+
+/* Input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #23262f;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:disabled {
+  background: #aaa;
+}
+
+button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+/* QR Image */
+.qr-image {
+  display: block;
+  margin: 24px auto 0 auto;
+  max-width: 100%;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* Error and Loading */
+.error {
+  color: #d00;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.loading {
+  text-align: center;
+  color: #555;
+}
+
+/* Social Links */
+.social-links {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 100;
+  display: flex;
+  gap: 16px;
+}
+
+.linkedin-link,
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.linkedin-link {
+  color: #007bff;
+}
+
+.github-link {
+  color: #23262f;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 32px;
+  color: #23262f;
+  font-size: 15px;
+  background: #e5e5e5;
+  width: 100%;
+}
+
+.footer-text {
+  color: #e25555;
+  font-weight: 500;
+} 
