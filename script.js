@@ -1,5 +1,5 @@
 // Lambda endpoint for QR code generation
-const lambdaUrl = "https://mf5unwipcjuei5j7jylt6bnyay0akvaj.lambda-url.us-east-1.on.aws/";
+const lambdaUrl = "https://qjzteoc2yejjeqi443rzpjnwq40ddfvq.lambda-url.eu-north-1.on.aws/";
 
 // DOM Elements
 const generateBtn = document.getElementById('generateBtn');
