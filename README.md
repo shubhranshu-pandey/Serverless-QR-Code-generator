@@ -144,47 +144,6 @@ cd Serverless-QR-Code-generator
 docker compose up -d --build
 ```
 
-3. (Optional) Create a systemd unit to start docker-compose on boot (example unit file):
-
-Create `/etc/systemd/system/serverless-qr-frontend.service` with:
-
-```ini
-[Unit]
-Description=Serverless QR Frontend (docker-compose)
-Requires=docker.service
-After=docker.service
-
-[Service]
-Type=oneshot
-WorkingDirectory=/path/to/Serverless-QR-Code-generator
-RemainAfterExit=yes
-ExecStart=/usr/bin/docker compose up -d --build
-ExecStop=/usr/bin/docker compose down
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Then enable and start:
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now serverless-qr-frontend.service
-```
-
-Notes:
-
-- The container serves static files only; the Lambda backend URL configured in `script.js` remains unchanged. If you want a local server for the backend as well, I can add a Flask service to the compose file.
-- If `script.js` contains sensitive data, avoid committing it (there is a `.gitignore` entry for it). If it is already committed, untrack it with:
-
-```bash
-git rm --cached script.js
-git commit -m "Stop tracking script.js"
-git push origin main
-```
-
----
-
 ## Usage
 
 1. Open the web app in your browser.
