@@ -1,0 +1,8 @@
+node_modules
+.git
+*.pyc
+__pycache__
+*.log
+.env
+.DS_Store
+lambda_function/

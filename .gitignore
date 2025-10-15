@@ -1,0 +1,20 @@
+# Node / editor / OS files
+node_modules/
+.DS_Store
+.env
+.env.*
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+docker-compose.override.yml
+
+# Ignore the frontend script if you don't want it in the repo
+script.js
+
+# Ignore lambda function artifacts
+lambda_function/__pycache__/
+lambda_function/*.pyc

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: serverless-qr-frontend:latest
+    ports:
+      - "${HOST_PORT:-801}:80" # Expose host port (HOST_PORT) -> container port 80, default 801
+    restart: unless-stopped
+    environment:
+      TZ: UTC
